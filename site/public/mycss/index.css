@@ -1,0 +1,78 @@
+
+::-webkit-scrollbar {
+    width:0px;
+}
+a:link,a:visited,a:hover,a:active {
+    text-decoration:none;
+    -webkit-tap-highlight-color:transparent;
+}
+ul,li,dl,dd,h1,h2,h3,h4,h5,h6,p,input {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.panel p {
+    border: solid 1px #F9C626;
+}
+.panel {
+    width:100%;
+    text-align:center;
+    background-color:#fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    float: right;
+}
+.panel_zhong {
+    font-size: 1.1em;
+    height:40px;
+    line-height:40px;
+    color: #B18F74;
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, #F9C626 100%);
+    background-image:      -o-linear-gradient(top, #ffffff 0%, #F9C626 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#F9C626));
+    background-image:         linear-gradient(to bottom, #ffffff 5%, #F9C626 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2b669a', GradientType=0);
+    background-repeat: repeat-x;
+    border-color: #F9C626;
+}
+/*获奖名单-无缝滚动 上下*/
+.activity {
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: block;
+    float: left;
+    background-color:#fff;
+}
+.activity ul {
+    color:#d2d2d2;
+    position:relative;
+    border: solid 1px #d2d2d2;
+}
+.activity li {
+    height:5%;
+    font-size:1em;
+    padding:0;
+    list-style:none;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+    text-shadow: 0 -1px 0 #F9C626;
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, #F9C626 100%);
+    background-image:      -o-linear-gradient(top, #ffffff 0%, #F9C626 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#F9C626));
+    background-image:         linear-gradient(to bottom, #ffffff 20%, #F9C626 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2b669a', GradientType=0);
+    background-repeat: repeat-x;
+    border-color: #F9C626;
+}
+
+.list-group-item.active {
+    color: #B18F74;
+}

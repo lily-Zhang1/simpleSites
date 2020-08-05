@@ -1,0 +1,69 @@
+<%- include('head.html') %>
+<!-- echarts & map -->
+<script type="text/javascript" src="//cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+<script type="text/javascript" src="//gallery.echartsjs.com/dep/echarts/map/js/world.js"></script>
+
+<body>
+
+<%- include('title.html') %>
+
+<!-- the search part -->
+<main>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" >
+                <form id="search" method="POST">
+                    <div id="firstLine" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <label>Please input the country:</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <input type="text" name="country"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <label >Select the start time:(xxxx/xx/xx)</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <input type="date" name="startDate"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <label >Select the end time:(xxxx/xx/xx)</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <input type="date" name="endDate"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <button class="btn btn-primary" type="submit">search</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9" >
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                     <div id="map"></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                    <p>Data source: WHO and Hopkins website
+                    </p>
+                    <p>Figures last updated: May 30, 2020 6:29 PM [GMT + 0]
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<%- include('foot.html') %>
+
+</body>
+
+<%- include('jsFile.html') %>
+<!-- my js -->
+<script type="text/javascript" src="./myjs/map.js"></script>
+
+</html>

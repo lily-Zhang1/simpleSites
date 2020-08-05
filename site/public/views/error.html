@@ -1,0 +1,41 @@
+<%- include('head.html') %>
+
+<body>
+
+<%- include('title.html') %>
+
+<!-- the main part -->
+<main>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3">
+            </div>
+            <div class="col-xs-8 col-sm-6 col-md-6 col-lg-6" >
+                <div class="alert alert-info">
+                    Sorry, the website currently only supports querying
+                    data from 2020-5-24 to 2020-5-30 in the United Kingdom,
+                    the United States and France, and the query period
+                    is at least 2 days!
+                </div>
+                <form method="get">
+                    <button class="btn btn-primary" type="submit">
+                        Back To Search Page
+                    </button>
+                </form>
+            </div>
+            <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3">
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+<%- include('foot.html') %>
+
+</body>
+
+<%- include('jsFile.html') %>
+
+</html>

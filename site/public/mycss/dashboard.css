@@ -1,0 +1,62 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/* Set the size and location of the logo */
+.navbar-inverse .navbar-brand > img {
+    max-width:45px;
+    margin-top:-3px;
+    margin-left:35px;
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+.navbar-brand, .navbar-nav > li > a {
+    line-height: 40px;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+
+.navbar-form {
+    line-height: 40px;
+}
+
+.navbar-inverse {
+    background-image: linear-gradient(to bottom , #F9C626 50%, #ffffff);
+    border-color: #696969;
+}
+
+.navbar-inverse .navbar-brand {
+    color: 	#696969;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+    color: #696969;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #696969;
+    font-size: 1.3em;
+}
+
+
+

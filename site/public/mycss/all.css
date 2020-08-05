@@ -1,0 +1,107 @@
+/*
+To make a simple colored header and footer for our website style,
+first we must ensure that we can reach the edge of the page directly
+by removing the margins or the filler on the body.
+The subject is given a minimum width, adjusted to what content
+can be tolerated. If the window is narrowed, the page format will
+change to a fixed format with a horizontal scroll bar.
+*/
+/*------------------------------------------*/
+html{
+    height:100%;
+}
+body{
+    min-height:100%;
+    min-width: 640px;
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: Lora;
+}
+main{
+    padding-top: 60px;
+    padding-bottom:160px;
+}
+
+/*--------------------- grid ---------------------*/
+
+.col-xs-12, .col-sm-8, .col-md-8, .col-lg-8,
+.col-xm-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3
+{
+    padding: 1% 3% 1%;
+    margin: 0;
+    font-size: 1em;
+}
+#search .col-xs-12, #search .col-sm-12,
+#search .col-md-12, #search .col-lg-12 {
+    padding: 3% 2% 1% 20%;
+    margin: 0;
+    font-size: 1em;
+}
+
+#search #firstLine {
+    padding: 25% 2% 1% 20%;
+}
+
+/*---------------------- footer --------------------*/
+.footer {
+    background-image: linear-gradient(to bottom , #ffffff 1%, #E6E6E6);
+    border-top: 25px solid #fff;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    overflow : hidden;
+    width:100%;
+    position:relative;
+    bottom:0;
+    height:160px;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    font-size: 0.9em;
+}
+
+#logo1 {
+    text-align: right;
+    max-height: 10px;
+}
+#logo2 {
+    text-align: left;
+    max-height: 10px;
+}
+
+/*---------------------- other --------------------*/
+h3 { margin-top: 1%; margin-bottom: 1%; }
+
+h4 { color:#84837C; font-size: 0.9em; }
+
+p { color:#666560; font-size: 0.9em; }
+
+#info .list-group-item {
+    font-size: 1em;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    float: right;
+}
+
+#map, #result {
+    width: 100%;
+    height: 400px;
+}
+
+#legend {
+    text-align: center;
+    padding: 0 1% 3% 3%;
+}
+
+#result1, #result2, #result3 {
+    width: 100%;
+    height: 200px;
+}
+
+
+
